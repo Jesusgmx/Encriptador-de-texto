@@ -1,0 +1,343 @@
+body {
+    background-color: #F3F5FC;
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    margin-bottom: 70px;
+}
+
+.logo-alura {
+    padding-left: 16px;
+    width: 32px;
+    height: 48px;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.container { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+
+.container-secundario-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.area-encriptar {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    min-height: 300px;
+    width: 90%;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: 0px;
+    resize: none;
+    padding: 0px;
+}
+
+.area-encriptar:focus{
+    outline: none;
+    font-size: 2rem;
+    padding: 0px;
+}
+
+.area-encriptar::placeholder {
+    color: #0A3871;
+}
+
+.texto-condiciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+.icono-advertencia {
+    display: inline;
+    width: 16px;
+    height: 16px;
+    padding-right: 5px;
+    color: #495057;
+}
+
+.parrafo-condiciones {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#contador {
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 25px;
+}
+.container-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    min-height: 158px;
+    width: 90%;
+}
+
+.btn-encriptar {
+    width: 100%;
+    height: 67px;
+    background-color:  #0A3871;
+    border: 0px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.btn-encriptar:hover {
+    background-color: #072B61;
+}
+
+.btn-desencriptar {
+    width: 100%;
+    height: 67px;
+    color: #0A3871;
+    background-color:  #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-desencriptar:hover {
+    background-color: #EFF1FA;
+}
+
+.container-secundario-2 {
+    display: flex;
+    align-items: center;
+    min-width: 280px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.container-encriptado-mobile-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 32px;
+    margin-bottom: 32px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    width: 80%;
+    word-break: break-word;
+    box-shadow: 0px 24px 32px -8px rgba(77, 69, 69, 0.575);
+}
+
+.container-encriptado-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 32px;
+    margin-bottom: 32px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    width: 80%;
+    word-break: break-word;
+    box-shadow: 0px 24px 32px -8px rgba(77, 69, 69, 0.575);
+}
+
+.texto-encriptado {
+    margin: 5px;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #495057;
+    margin-bottom: 32px;
+    display: none;
+}
+
+.img-muneco {
+    display: none;
+    height: auto;
+    width: 200px;
+}
+.mensaje-no-encontrado {
+    font-weight: bold;
+    font-size: 24px;
+    color: #343A40;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.instruccion-texto {
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;
+    text-align: center;
+}
+
+.btn-copiar {
+    width: 100%;
+    height: 67px;
+    color: #0A3871;
+    background-color:  #ffffff;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+}
+
+.btn-copiar:hover {
+    background-color: #EFF1FA;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    background-color: #030e1b;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.copy {
+    font-size: 12px;
+    color: #E5E5E5;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.redessociales {
+    display: flex;
+}
+.redessociales-enlace {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 5px 15px;
+    background-color: #f0730c;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.redessociales-enlace a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+
+/* Estilos Tablet */
+
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+    .container-btns {
+        flex-direction: row;
+        min-height: 100px;
+    }
+
+    .btn-encriptar {
+        width: 45%;
+    }
+    .btn-desencriptar {
+        width: 45%;
+    }
+
+    .img-muneco {
+        display: none;
+    }
+}
+
+/* Estilos Escritorio */
+
+@media screen and (min-width: 1024px) {
+    .cabecera {
+        margin-bottom: 0;
+    }
+
+    .container{
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .container-secundario-1 {
+        width: 60%;
+        min-height: 500px;
+        padding: 32px 0;
+        margin-bottom: 32px;
+    }
+
+    .container-btns {
+        flex-direction: row;
+        height: auto;
+        min-height: 0;
+        padding-bottom: 0;
+    }
+
+    .btn-encriptar{
+        width: 45%;
+    }
+    
+    .btn-desencriptar{
+        width: 45%;
+    }
+    .container-secundario-2 {
+        width: 40%;
+    }
+    .texto-encriptado {
+        overflow: scroll;
+    }
+
+    .container-encriptado-mobile-tablet {
+        width: 60%;
+        height: 500px;
+    }
+
+    .container-encriptado-desktop {
+        width: 60%;
+        height: 500px;
+    }
+    .img-muneco {
+        display: block;
+    }
+}
+

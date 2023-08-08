@@ -1,0 +1,217 @@
+body {
+    background-color: #F3F5FC;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 10vh;
+}
+
+.logo-alura {
+    width: 9rem;
+    height: 4rem;
+    flex-shrink: 0;
+}
+
+.container { 
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 75vh;
+}
+
+.container-secundario-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px dashed rgb(255, 51, 0); */
+    width: 60%;
+    height: 100%;
+}
+
+.area-encriptar {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    height: 60%;
+    width: 100%;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    border: 0px;
+    resize: none;
+    padding: 0;
+    margin-top: 10%;
+}
+
+.area-encriptar:focus{
+    outline: none;
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+
+.area-encriptar::placeholder {
+    color: #0A3871;
+}
+
+.icono-advertencia {
+    display: inline;
+    padding-left: 15px;
+    width: 16px;
+    height: 16px;
+    color: #495057;
+}
+
+.parrafo-condiciones {
+    display: inline;
+    padding-left: 5px;
+}
+
+#contador {
+    display: inline;
+}
+.container-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.btn-encriptar {
+    width: 40%;
+    height: 50px;
+    background-color:  #0A3871;
+    border: 0px;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.btn-encriptar:hover {
+    background-color: #072B61;
+}
+
+.btn-desencriptar {
+    width: 40%;
+    height: 50px;
+    color: #0A3871;
+    background-color:  #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-desencriptar:hover {
+    background-color: #EFF1FA;
+}
+
+.container-secundario-2 {
+    display: flex;
+    justify-content: center;
+    /* border: 1px dashed blue; */
+    width: 40%;
+    height: 100%;
+}
+
+.container-encriptado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    width: 70%;
+    box-shadow: 0px 24px 32px -8px rgba(81, 3, 92, 0.08);
+}
+
+.texto-encriptado {
+    margin: 5px;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #495057;
+}
+
+.btn-copiar {
+    width: 80%;
+    height: 50px;
+    color: #0A3871;
+    background-color:  #d8dfe8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-copiar:hover {
+    background-color: #EFF1FA;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    height: 10vh;
+    width: 100%;
+    background-color: #030e1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.copy {
+    color: #E5E5E5;
+}
+
+.redessociales {
+    display: flex;
+}
+.redessociales-enlace {
+    margin: 0 1rem;
+    padding: .5rem 1rem;
+    background-color: #f0730c;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.redessociales-enlace a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+@media (max-width: 991.98px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin-left: 10%;
+        margin-right: 10%;
+        height: 75vh; */
+    }
+
+    .container-secundario-2 {
+        display: flex;
+        justify-content: center;
+        /* border: 1px dashed blue; */
+        width: 90%;
+        height: 100%;
+    }
+
+    .container-secundario-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* border: 1px dashed rgb(255, 51, 0); */
+        width: 90%;
+        height: 100%;
+    }
+
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <link rel="icon" href="/img/Logo.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+
+    <body>
+
+        <header class="cabecera">
+            <img src = "/img/Top.svg" alt="logo-alura" class="logo-alura"/>
+            <h1 class="titulo">Challenge Encriptador de Texto</h1>
+            <P></P>
+        </header>
+ 
+        <main class="container">
+                <div class="container-secundario-1">
+                    <Textarea class="area-encriptar" maxlength="500" id="mensaje-ingresado" oninput="validarCaracteres(this)" placeholder="Ingrese el texto aqui" ></Textarea>
+                    <div class="texto-condiciones">
+                        <ul>
+                            <li class="parrafo-condiciones" id="validador"><img src = "/img/bi_exclamation-circle-fill.svg" alt="logo-alura" class="icono-advertencia"/>Solo letras minúsculas y sin acentos | Sin caracteres especiales</li>
+                            <li id="contador"></li>
+                        </ul>
+                    </div>
+
+                    <div class="container-btns">
+                        <button class="btn-encriptar" id="encriptar">Encriptar</button>
+                        <button class="btn-desencriptar" id="desencriptar">Desincriptar</button>
+                    </div>
+                </div>
+
+                <div class="container-secundario-2">
+                    <div class="container-encriptado-mobile-tablet" id="decod">
+                        <P class="texto-encriptado" id="mensaje-codificado"></P>
+                        <img src="/img/Muñeco.png" alt="muñeco" class="img-muneco" id="muneco">
+                        <p class="mensaje-no-encontrado" id="aviso-mensaje">
+                            Ningún mensaje fue encontrado
+                        </p>
+                        <p class="instruccion-texto" id="aviso-instruccion">
+                            Ingresa el texto que desees encriptar o desencriptar.
+                        </p>
+                        <button class="btn-copiar" id="btn--copiar">Copiar</button>
+                    </div>  
+                </div>
+        </main>
+
+        <footer class="footer">
+            <p class="copy">Desarrollado por: Jesus Gonzalez | 2023 | Oracle ONE Next Education</p>
+            <ul class="redessociales">
+                <li class="redessociales-enlace"><i class="fa-brands fa-github"></i><a href="https://github.com/Jesusgmx">Github</a></li>
+                <li class="redessociales-enlace"><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/jesus-gonzalez-mx">Linkedin</a></li>
+                <li class="redessociales-enlace"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/el_raso_sonico/">Instagram</a></li>
+            </ul>
+        </footer>
+        <script src="/js/tab.js" defer></script>
+        <script src="/js/validador.js" defer></script>
+        <script src="/js/encriptador.js" defer></script>
+    </body>
+
+</html>
