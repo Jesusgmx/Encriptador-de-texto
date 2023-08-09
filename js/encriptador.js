@@ -4,6 +4,7 @@ const btnEncriptar = document.getElementById('encriptar');
 const btnDesencriptar = document.getElementById('desencriptar');
 const btnCopiar = document.getElementById('btn--copiar');
 const containerDecod = document.getElementById('decod');
+const contador = document.getElementById('contador');
 
 function encriptar () {
     containerDecod.classList.remove('container-encriptado-mobile-tablet');
@@ -15,6 +16,8 @@ function encriptar () {
     resultadoMensaje.style.display='block';
     let textoIngresado = mensaje.value;
     resultadoMensaje.innerHTML = textoIngresado.replaceAll('e', 'enter').replaceAll('i', 'imes').replaceAll('a', 'ai').replaceAll('o', 'ober').replaceAll('u', 'ufat');
+    mensaje.value = '';
+    contador.innerHTML = `0/500 caracteres`;
 };
 
 function desencriptar () {
@@ -27,6 +30,8 @@ function desencriptar () {
   resultadoMensaje.style.display='block';
   let textoEncriptado = mensaje.value;
   resultadoMensaje.innerHTML= textoEncriptado.replaceAll('enter' , 'e').replaceAll('imes', 'i').replaceAll('ai', 'a').replaceAll('ober', 'o').replaceAll('ufat', 'u');
+  mensaje.value = '';
+  contador.innerHTML = `0/500 caracteres`;
 }
 
 function copy() {

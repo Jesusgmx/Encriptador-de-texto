@@ -11,7 +11,7 @@ MENSAJE.addEventListener('input',(e) => {
 
 function validarCaracteres(textarea) {
     let inputValue = textarea.value;
-    let isValid = /^[a-zñ ]+$/i.test(inputValue);
+    let isValid = /^[a-zñ ]+$/.test(inputValue);
     if (!isValid) {
         VALIDAR.style.color = '#FF0000';
         document.getElementById('encriptar').disabled = true;
